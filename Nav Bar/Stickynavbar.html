@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #logo {
+            width: 200px;
+            height: auto;
+        }
+
+        #menu-bar {
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        #menu-bar li {
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #container {
+            text-align: center;
+            padding: 60px 120px;
+        }
+
+        #aboutimage {
+            width: 100%;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://source.unsplash.com/weekly?logo" id="logo">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="aboutimage" src="https://source.unsplash.com/1600x900/?nature,water">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum harum voluptatum magnam repudiandae
+            inventore, sequi reprehenderit perferendis doloribus quo exercitationem, at possimus officiis dolorum.
+            Accusamus culpa ullam suscipit repellendus iste ex, illum perspiciatis quisquam sint similique expedita ut
+            est dolorum eaque architecto dolores consectetur quo! Provident, quidem totam. Repellat reiciendis fuga aut
+            illo eaque dolorum suscipit ipsam aliquam vitae? Quidem vero amet atque architecto, quos qui debitis fugiat
+            placeat minima pariatur. Ab, vero totam eius atque ducimus non necessitatibus eum cupiditate iste saepe
+            deserunt. Vero nulla, aliquid quae ea non, commodi, soluta laborum labore adipisci fuga ratione ex? Neque
+            delectus reiciendis nemo excepturi omnis unde velit et ad ipsam? Non iusto minima error autem rem nobis,
+            consequuntur ducimus eum esse ex atque dolorem voluptates velit laboriosam enim sequi dolor fugit. Dolorum
+            veritatis suscipit dignissimos nesciunt, ut tempora laboriosam ipsum, consequuntur odit magnam ipsa
+            doloribus quisquam veniam nam perferendis, incidunt eos sequi! Quia voluptates nesciunt magnam quae
+            voluptatem vero id iure deserunt recusandae sit dignissimos, cupiditate itaque, quisquam asperiores animi,
+            praesentium porro? Quisquam nesciunt culpa dolorem ducimus ab recusandae minus? Rerum quae explicabo neque
+            aspernatur saepe in, unde eaque cumque quisquam laboriosam magni, iste ipsam omnis officiis impedit hic
+            libero minus inventore! Debitis temporibus dolor cum, ipsum omnis reiciendis rem facere inventore nisi
+            mollitia, quos excepturi. Sapiente nulla eligendi, quas voluptas aspernatur a saepe quaerat omnis ea, illo
+            at enim maxime deserunt iure cumque dignissimos mollitia quasi pariatur. Possimus dolor facere sunt fugit
+            repellat iste neque est hic maxime laudantium, assumenda alias porro, nam aliquid explicabo, placeat in ut.
+            Delectus nihil aspernatur dolore obcaecati rem architecto accusantium voluptate, provident assumenda nam
+            repudiandae dolor a repellat nesciunt aliquam est consequuntur blanditiis? Dicta iusto dolore ipsum id
+            mollitia? Delectus quis tempore similique et ea mollitia repellendus nobis doloremque, voluptatem voluptas!
+            Et enim repellat laborum quae minima hic omnis praesentium laudantium aliquam nihil, officiis quos.
+            Accusamus quod corporis necessitatibus reprehenderit, voluptates repellat? Animi quis porro nihil fuga neque
+            possimus similique labore autem rem laborum cupiditate aperiam rerum delectus, cum beatae sequi earum
+            dignissimos commodi incidunt accusantium officiis tempore harum amet. Aperiam, expedita sint at nisi,
+            accusantium iure, perspiciatis sunt repudiandae vitae blanditiis voluptatibus quod hic voluptatum
+            exercitationem consequuntur? Perspiciatis eos voluptas voluptatum unde! Suscipit autem magnam iusto
+            doloremque facilis ab eius quisquam aperiam, sapiente laborum earum qui aut vitae sequi labore minus
+            assumenda illo! Ullam at totam harum optio vel fugiat ut ab ipsa sunt itaque unde atque aut, ipsum quam
+            placeat sed nemo esse illo minima incidunt ad quis officia impedit. Illum quaerat exercitationem dolorem
+            nihil deserunt ipsam perspiciatis asperiores mollitia. Quo, recusandae? Totam debitis perferendis impedit
+            maxime sunt quas quo ad minima excepturi earum voluptatem incidunt reiciendis ipsam consequatur beatae,
+            magnam, qui blanditiis corporis! Repudiandae consectetur soluta facilis, suscipit sint recusandae corrupti
+            nostrum quam aliquid expedita, deleniti sed, quas optio eveniet natus. Quam maiores harum ipsa cumque minus!
+            Explicabo repellendus reprehenderit delectus, mollitia adipisci repudiandae, libero ullam molestiae incidunt
+            quae harum consectetur sunt voluptates corrupti blanditiis suscipit tempora et illum nesciunt.</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            let navbar=document.getElementById("menu-bar");
+            if (window.pageYOffset >= 190) {
+               navbar.classList.add('sticky');
+            }
+            else
+            {
+                nabar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+
+</html>
